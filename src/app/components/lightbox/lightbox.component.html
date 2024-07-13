@@ -1,0 +1,10 @@
+<div class="lightbox-component" (click)="open(content)">
+  <img class="lightbox-component-img" src="{{ src }}">
+</div>
+
+<ng-template #content let-modal>
+	<div class="lightbox-modal">
+    <button type="button" class="lightbox-modal-close" (click)="modal.dismiss()">╳</button>
+    <img class="lightbox-modal-img" src="{{ srcLarge || src }}">
+	</div>
+</ng-template>

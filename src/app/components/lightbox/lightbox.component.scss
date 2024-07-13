@@ -1,0 +1,65 @@
+// Component styling (as it appears in the article)
+// -------------------
+
+:host {
+    display: block;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.lightbox-component {
+}
+
+    .lightbox-component-img {
+        max-width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: filter 0.1s ease;
+    }
+    .lightbox-component-img:hover {
+        filter: brightness(1.02);
+    }
+
+// Lightbox styling (adjusting the ng-bootstrap modal a bit)
+// -------------------
+
+::ng-deep .lightbox-window .modal-dialog { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: none;
+    margin: 0px;    
+}
+
+    ::ng-deep .lightbox-window .modal-content {
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+    }
+
+        .lightbox-modal {
+            position: relative;
+        }
+
+            .lightbox-modal-close {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                border: none;
+                background: none;
+                color: white;
+                user-select: none;
+                padding: 4px 10px;
+                font-size: 0.9rem;
+            }
+            button:focus {
+                outline:0;
+            }
+
+            .lightbox-modal-img {
+                max-height: 90vh;
+                max-width: 90vw;
+                border-radius: 10px;
+            }
