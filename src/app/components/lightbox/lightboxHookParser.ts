@@ -10,10 +10,8 @@ export class LightboxHookParser implements HookParser {
 
   public loadComponent(hookId: number, hookValue: HookValue, context: any, childNodes: any[]): HookComponentData {
     return {
-      // Load our Lightbox component for them
-      component: LightboxComponent,
-      // Since img-elements can't normally have content, replace them with 'lightbox-img' elements
-      hostElementTag: 'lightbox-img'
+      component: LightboxComponent,   // Load our Lightbox component
+      hostElementTag: 'lightbox-img'  // As img-elements can't have content, replace them with 'lightbox-img' elements
     };
   }
 

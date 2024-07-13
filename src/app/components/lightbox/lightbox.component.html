@@ -1,7 +1,9 @@
-<div class="lightbox-component" (click)="open(content)">
+<!-- Component html -->
+<div class="lightbox-component" (click)="modalService.open(content)">
   <img class="lightbox-component-img" src="{{ src }}">
 </div>
 
+<!-- Modal html -->
 <ng-template #content let-modal>
 	<div class="lightbox-modal">
     <button type="button" class="lightbox-modal-close" (click)="modal.dismiss()">╳</button>

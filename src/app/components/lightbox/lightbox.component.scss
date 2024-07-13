@@ -1,4 +1,4 @@
-// Component styling (as it appears in the article)
+// Component styling
 // -------------------
 
 :host {
@@ -20,10 +20,10 @@
         filter: brightness(1.02);
     }
 
-// Lightbox styling (adjusting the ng-bootstrap modal a bit)
+// Lightbox styling (adjusting the ng-bootstrap modal styles a bit)
 // -------------------
 
-::ng-deep .lightbox-window .modal-dialog { 
+::ng-deep .modal-dialog { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
     margin: 0px;    
 }
 
-    ::ng-deep .lightbox-window .modal-content {
+    ::ng-deep .modal-content {
         width: fit-content;
         background-color: transparent;
         border: none;
