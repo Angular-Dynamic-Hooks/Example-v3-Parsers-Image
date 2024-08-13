@@ -42,22 +42,7 @@
         .lightbox-modal {
             position: relative;
         }
-
-            .lightbox-modal-close {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                border: none;
-                background: none;
-                color: white;
-                user-select: none;
-                padding: 4px 10px;
-                font-size: 0.9rem;
-            }
-            button:focus {
-                outline:0;
-            }
-
+        
             .lightbox-modal-img {
                 max-height: 90vh;
                 max-width: 90vw;

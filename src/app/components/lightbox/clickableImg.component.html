@@ -5,8 +5,7 @@
 
 <!-- Modal html -->
 <ng-template #content let-modal>
-	<div class="lightbox-modal">
-    <button type="button" class="lightbox-modal-close" (click)="modal.dismiss()">╳</button>
+	<div class="lightbox-modal" (click)="modal.dismiss()">
     <img class="lightbox-modal-img" src="{{ srcLarge || src }}">
 	</div>
 </ng-template>
